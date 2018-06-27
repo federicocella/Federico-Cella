@@ -21,6 +21,6 @@ $(document).ready(function(){
         $("#aboutline").addClass("underlineoff");
     });
     $(".navelement").click(function(){
-		window.scroll({ top: 2500, left: 0, behavior: 'smooth' });
+		window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
 	});
 });
