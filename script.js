@@ -20,4 +20,7 @@ $(document).ready(function(){
         $("#aboutline").removeClass("underline");
         $("#aboutline").addClass("underlineoff");
     });
+    $(".navelement").click(function(){
+		window.scroll({ top: 2500, left: 0, behavior: 'smooth' });
+	});
 });
