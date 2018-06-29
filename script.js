@@ -4,6 +4,14 @@ function pageAppear() {
 }
 window.onload = pageAppear;
 $(document).ready(function(){
+    $(".project").mouseenter(function(){
+        $(this).find(".projtitle").addClass("projtitleon");
+        $(this).find(".projtitle").removeClass("projtitleoff");
+    });
+    $(".project").mouseleave(function(){
+        $(".projtitle").removeClass("projtitleon");
+        $(".projtitle").addClass("projtitleoff");
+    });
     $("#projects").mouseenter(function() {
         $("#projline").addClass("underline");
         $("#projline").removeClass("underlineoff");
@@ -20,4 +28,7 @@ $(document).ready(function(){
         $("#aboutline").removeClass("underline");
         $("#aboutline").addClass("underlineoff");
     });
+    $(".navelement").click(function(){
+		window.scroll({ top: window.innerHeight, left: 0, behavior: 'smooth' });
+	});
 });
