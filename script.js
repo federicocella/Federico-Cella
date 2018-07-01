@@ -52,13 +52,12 @@ $(document).ready(function(){
         immagine = immagine.concat(ext);
         $(".panelimg").attr("src", immagine);
         $(".panel").removeClass("hidden");
-        $(".panel").removeClass("panelclosed");
         $(".panel").addClass("visible");
     });
     $(".cancelimg").click(function() {
         $(".panel").addClass("hidden");
         $(".panel").removeClass("visible");
-        $(".panel").addClass("panelclosed");
+
     });
     var distance = $("#navbar").offset().top,
     $window = $(window);
@@ -69,12 +68,16 @@ $(document).ready(function(){
             $("#navbar").removeClass("navbig");
             $(".navelement").addClass("navelshort");
             $(".navelement").removeClass("navelbig");
+            /*$(".navtitle").addClass("ntshow");
+            $(".navtitle").removeClass("nthide");*/
         }
         else {
             $("#navbar").addClass("navbig");
             $("#navbar").removeClass("navshort");
             $(".navelement").addClass("navelbig");
             $(".navelement").removeClass("navelshort");
+            /*$(".navtitle").removeClass("ntshow");
+            $(".navtitle").addClass("nthide");*/
         }
     });
 });

@@ -309,7 +309,7 @@ body {
     transition: 0.3s;
     visibility: hidden;
     opacity: 0;
-    transform: translate(-50%,-20%) scale(1, 1);
+    transform: translate(-50%,-40%) scale(0.8, 0.8);
 }
 .visible {
     transition: 0.3s;
@@ -333,3 +333,23 @@ body {
     margin: 15px;
     cursor: pointer;
 }
+/*.navtitle {
+    float: left;
+    color: black;
+    font-size: 25pt; 
+    font-family: Shrikhand, serif;
+}
+.navtitlebox {
+    display: inline-block;
+    top: 2em;
+    left: 2em;
+    position: fixed;
+}
+.nthide {
+    transform: translate(0%, 200%);
+    transition: 0.5s;
+}
+.ntshow {
+    transform: translate(0%, 0%);
+    transition: 0.5s;
+}*/
