@@ -45,6 +45,21 @@ $(document).ready(function(){
             scrollTop: position
         } );
     });
+    $(".project").click(function() {
+        var ext = ".jpg";
+        var immagine = String($(this).find("img").attr("src"));
+        immagine = immagine.substr(0, immagine.length-8);
+        immagine = immagine.concat(ext);
+        $(".panelimg").attr("src", immagine);
+        $(".panel").removeClass("hidden");
+        $(".panel").removeClass("panelclosed");
+        $(".panel").addClass("visible");
+    });
+    $(".cancelimg").click(function() {
+        $(".panel").addClass("hidden");
+        $(".panel").removeClass("visible");
+        $(".panel").addClass("panelclosed");
+    });
     var distance = $("#navbar").offset().top,
     $window = $(window);
 

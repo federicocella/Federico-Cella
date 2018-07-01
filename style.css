@@ -13,6 +13,7 @@ body {
     font-family: Shrikhand, serif;
     position: relative;
     letter-spacing: 1pt;
+    text-decoration: none;
 }
 #header {
     height: 100px;
@@ -123,7 +124,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: 1s;
-    transition-delay: 0s;
+    transition-delay: 1.5s;
 }
 #verticalline {
     width: 10%;
@@ -132,6 +133,7 @@ body {
     margin-right: auto;
     background-color: black;
     z-index: 2;
+    border-radius: 2.5px;
     overflow: visible;
 }
 #horizontalline {
@@ -141,6 +143,7 @@ body {
     margin-top: 22.5px;
     margin-left: -22.5px;
     background-color: black;
+    border-radius: 2.5px;
     z-index: 3;
 }
 @keyframes spinner {
@@ -191,6 +194,7 @@ body {
     display: inline-block;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
 }
 .projimg {
     width: 100%;
@@ -288,4 +292,44 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 80px;
+}
+.panel {
+    display: inline-flex;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    z-index: 6;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: visible;
+}
+.hidden {
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%,-20%) scale(1, 1);
+}
+.visible {
+    transition: 0.3s;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1,1);
+}
+.panelimg {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    max-width: 95vw;
+    max-height: 80vh;
+    transition: 0.5s;  
+    display: inline;  
+}
+.cancelimg {
+    float: right;
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    cursor: pointer;
 }
