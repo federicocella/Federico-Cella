@@ -1,0 +1,34 @@
+:root {
+  --shadowColor: #e3065d;
+}
+@font-face {
+  font-family: Noir;
+  src: url(NoirPro-Bold.otf);
+}
+body {
+  overflow: hidden;
+  background-color: #999999;
+}
+.quoteContainer {
+  transform: translateY(-10em);
+}
+.quote {
+  width: 40em;
+  margin: auto;
+  text-align: center;
+  margin-top: 1em;
+  transform: rotateX(-45deg) rotateY(45deg);
+  color: white;
+  font-size: 2em;
+  font-family: Noir;
+  animation-name: ciao;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  text-transform: uppercase;
+}
+
+@keyframes ciao {
+  from {transform: rotateX(-37deg) rotateY(37deg) translateX(20em);}
+  to {transform: rotateX(-37deg) rotateY(37deg) translateX(-50em);}
+}
