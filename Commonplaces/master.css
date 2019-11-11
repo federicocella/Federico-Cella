@@ -14,12 +14,13 @@ body {
 #commonplace {
   font-family: Noir;
   font-size: 3em;
-  color: white;
   position: absolute;
   width: 70%;
   top: 50%;
   text-align: left;
+  color: black;
   z-index: 1;
+  mix-blend-mode: hue;
   transform: translate(-50%, -50%);
 }
 .quoteContainer {
