@@ -8,9 +8,14 @@
 body {
   overflow: hidden;
   background-color: #999999;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 .quoteContainer {
-  transform: translateY(-10em);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .quote {
   width: 40em;
@@ -29,6 +34,6 @@ body {
 }
 
 @keyframes ciao {
-  from {transform: rotateX(-37deg) rotateY(37deg) translateX(20em);}
-  to {transform: rotateX(-37deg) rotateY(37deg) translateX(-50em);}
+  from {transform: rotateX(-37deg) rotateY(37deg) translateX(20em) translateY(-8em);}
+  to {transform: rotateX(-37deg) rotateY(37deg) translateX(-50em) translateY(-8em);}
 }
