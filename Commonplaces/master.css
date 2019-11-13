@@ -24,6 +24,7 @@ body {
 }
 .container {
   scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
   overflow: scroll;
   width: 100vw;
   height: 100vh;
